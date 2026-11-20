@@ -1,15 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marian's Portfolio</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marian Baguio Gabales | Portfolio</title>
+  <meta name="description" content="Portfolio of Marian Baguio Gabales, a BSIT student at Cordova Public College learning web development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header class="site-header">
-        <a class="logo" href="index.html">
-            <img src="images/logo.png" alt="Marian's Portfolio Logo">
-     </header>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="Go to top">
+      <span>MG</span>
+      <img src="images/logo.jpg" alt="" onerror="this.style.display='none'">
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page" id="main">
+
+
+    <section class="box home" id="home">
+      <div class="intro">
+        <p class="hello">Hi, I'm</p>
+        <h1>Marian Baguio Gabales</h1>
+        <p class="role">Aspiring Web Developer</p>
+        <p class="lead">I'm a BSIT student at Cordova Public College. I build simple, clean websites with HTML and CSS.</p>
+        <div class="actions">
+          <a class="button" href="#projects">View my projects</a>
+          <a class="button outline" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="photo">
+          <span>MG</span>
+          <img src="images/my.picture.png" alt="Marian Baguio Gabales" onerror="this.style.display='none'">
+        </div>
+        <div class="code-card" aria-hidden="true">
+          <div class="bar"><i></i><i></i><i></i></div>
+             <pre>&lt;h1&gt;Hello, world!&lt;/h1&gt;
+                  &lt;p&gt;I'm Marian, learning
+                to build the web.&lt;/p&gt;</pre>
+       
+              </div>
+        <span class="sticker s1" aria-hidden="true">HTML</span>
+        <span class="sticker s2" aria-hidden="true">CSS</span>
+        <span class="sticker s3" aria-hidden="true">C++</span>
+      </div>
+    </section>
+
+
+    <section class="box" id="about">
+      <h2 class="title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm a first-year Bachelor of Science in Information Technology student at Cordova Public College. My goal is to become a web developer who builds websites that are easy to use and helpful to people.</p>
+          <p>Alongside my studies, I worked as a software sales agent, so I also know how to talk to customers and explain a product clearly.</p>
+          <ul class="facts">
+            <li><i class="fa-solid fa-graduation-cap"></i> First-year BSIT</li>
+            <li><i class="fa-solid fa-location-dot"></i> Cordova, Cebu</li>
+            <li><i class="fa-solid fa-bullseye"></i> Goal: web developer</li>
+          </ul>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>BSIT Student</h3>
+            <span>Cordova Public College</span>
+            <p>Studying programming and web development.</p>
+          </li>
+          <li>
+            <h3>Learning Web Development</h3>
+            <span>Class activities and self-study</span>
+            <p>Practicing HTML, CSS and JavaScript through school and personal projects.</p>
+          </li>
+          <li>
+            <h3>Software Sales Agent</h3>
+            <span>Mariosoft Solutions</span>
+            <p>Sold and promoted software products.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    
+    <section class="box" id="skills">
+      <h2 class="title">Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <i class="icon fa-solid fa-code"></i>
+          <h3>Web development</h3>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <i class="icon fa-solid fa-terminal"></i>
+          <h3>Programming</h3>
+          <ul class="tags">
+            <li>C++</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <i class="icon fa-solid fa-people-group"></i>
+          <h3>Working with people</h3>
+          <ul class="tags">
+            <li>Teamwork</li>
+            <li>Sales</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="box" id="projects">
+      <h2 class="title">Projects</h2>
+
+     
+      <article class="project">
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><b>Fix N' Chill</b></div>
+          <div class="slider">
+            <input type="radio" name="fix" id="fix1" checked aria-label="Fix N' Chill picture 1">
+            <input type="radio" name="fix" id="fix2" aria-label="Fix N' Chill picture 2">
+            <input type="radio" name="fix" id="fix3" aria-label="Fix N' Chill picture 3">
+            <div class="viewport">
+              <img src="images/fixnchill.png" alt="Fix N' Chill home page" loading="lazy">
+              <img src="images/fixnchill-about.us.png" alt="Fix N' Chill about us page" loading="lazy">
+              <img src="images/fixnchill-book.png" alt="Fix N' Chill appointment booking page" loading="lazy">
+            </div>
+            <div class="arrows">
+              <div class="set"><label for="fix3" class="prev" title="Previous">&#10094;</label><label for="fix2" class="next" title="Next">&#10095;</label></div>
+              <div class="set"><label for="fix1" class="prev" title="Previous">&#10094;</label><label for="fix3" class="next" title="Next">&#10095;</label></div>
+              <div class="set"><label for="fix2" class="prev" title="Previous">&#10094;</label><label for="fix1" class="next" title="Next">&#10095;</label></div>
+            </div>
+            <div class="dots"><label for="fix1" title="Picture 1"></label><label for="fix2" title="Picture 2"></label><label for="fix3" title="Picture 3"></label></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Fix N' Chill</h3>
+          <p class="kind">School project</p>
+          <p>A gadget repair website where customers can view repair services and book an appointment.</p>
+          <p>I worked on the design and different parts of the site. Building it taught me how HTML, CSS and JavaScript work together, and it improved my coding skills.</p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </article>
+
+  
+      <article class="project flip">
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><b>PulseLink</b></div>
+          <div class="slider">
+            <input type="radio" name="pulse" id="pulse1" checked aria-label="PulseLink picture 1">
+            <input type="radio" name="pulse" id="pulse2" aria-label="PulseLink picture 2">
+            <input type="radio" name="pulse" id="pulse3" aria-label="PulseLink picture 3">
+            <div class="viewport">
+              <img src="images/PulseLink.png" alt="PulseLink home page" loading="lazy">
+              <img src="images/PulseLink2.png" alt="PulseLink donor sign-up page" loading="lazy">
+              <img src="images/PulseLink3.png" alt="PulseLink donor search page" loading="lazy">
+            </div>
+            <div class="arrows">
+              <div class="set"><label for="pulse3" class="prev" title="Previous">&#10094;</label><label for="pulse2" class="next" title="Next">&#10095;</label></div>
+              <div class="set"><label for="pulse1" class="prev" title="Previous">&#10094;</label><label for="pulse3" class="next" title="Next">&#10095;</label></div>
+              <div class="set"><label for="pulse2" class="prev" title="Previous">&#10094;</label><label for="pulse1" class="next" title="Next">&#10095;</label></div>
+            </div>
+            <div class="dots"><label for="pulse1" title="Picture 1"></label><label for="pulse2" title="Picture 2"></label><label for="pulse3" title="Picture 3"></label></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>PulseLink</h3>
+          <p class="kind">Practice project</p>
+          <p>A blood donor website where people can sign up as donors, search for available donors, and connect with others who need blood.</p>
+          <p>I used this project to practice my web development skills and to learn how a website can help people support one another.</p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="coming">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>Next project</h3>
+        <p>I'm still learning and building. My next project will appear here.</p>
+      </div>
+    </section>
+
+
+    <section class="box" id="contact">
+      <h2 class="title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Have a question or want to work together? Send me a message or find me online.</p>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mariangabales10@gmail.com&su=Hello%20Marian" target="_blank" rel="noopener">mariangabales10@gmail.com</a></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div><span>School</span>Cordova Public College</div>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Location</span>Gabi, Cordova, Cebu, Philippines</div>
+            </li>
+          </ul>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/marianbaguiogabz" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://github.com/mariangabales10" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.instagram.com/marianbaguiogabz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <form class="form" action="mailto:mariangabales10@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Marian Baguio Gabales. Thank you for visiting.</p>
+  </footer>
+
 </body>
 </html>
